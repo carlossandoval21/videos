@@ -1,8 +1,13 @@
-<script src="//ssl.p.jwpcdn.com/player/v/8.25.0/jwplayer.js"></script>
+
+<script
+    src="//ssl.p.jwpcdn.com/player/v/8.25.0/jwplayer.js"></script>
 <script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
 </script>
+
 <div id="player"></div>
+ <div id="fullScreen">
 <script>
+ 
 var playerInstance = jwplayer("player");
 
     playerInstance.setup({
@@ -13,7 +18,7 @@ var playerInstance = jwplayer("player");
           image: "https://cdn.bolivia.com/sdi/2022/07/21/lightyear-fecha-estreno-chris-evans-disney-plus-1050224.jpg",
             "sources": [
                 {
-                    "default": false,
+                    "default": true,
                     "type": "dash",
                     "file": 'https://objectstorage.us-phoenix-1.oraclecloud.com/n/axa4wow3dcia/b/bucket-20201001-1658/o/2022pelicu%2Fjulio%2FVer%20Lightyear%20(2022)%20Online%20Gratis%20en%20HD%20-%20InkaPelis.mp4',
                     
@@ -22,9 +27,11 @@ var playerInstance = jwplayer("player");
             ]
         }],
         width: "100%",
-        height: "33%",
+        height: "100%",
         aspectratio: "16:9",
-        autostart: true,
+        autostart: false,
         cast: {}
+ 
     });
 </script>
+</div>
