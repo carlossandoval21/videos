@@ -7,6 +7,7 @@
 }
 
 body {
+    loading: lazy ;
     background: url(images/background-desktop.jpg) no-repeat top center;
     background-size: cover;
 
@@ -131,6 +132,7 @@ span.mes {
 
 @media (max-width: 723px){
     body {
+        loading: lazy ;
         background: url(images/background-mobile.jpg) no-repeat center center;
         background-size: cover;
         width: 100vw;
